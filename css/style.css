@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    background: Red;
+    padding: 5px 0;
+}
+header .container .content__header{
+    display: flex;
+    align-items: center;
+}
+header .container .content__header .logo__header{
+    flex-basis: 10%;
+}
+header .container .content__header .menu__header{
+    flex-basis: 80%;
+}
+header .container .content__header .card__head{
+    flex-basis: 10%;
+}
+header .container .content__header .card__head .card{
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+}
+
+header .container .content__header .card__head .card span{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 50%;
+    height: 50%;
+    background: rgba(20,120,250,1);
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+header .container .content__header .menu__header nav .nav__link li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+header .container .content__header .menu__header nav .nav__link li a{
+    text-decoration: none;
+    color: White;
+    font-weight: 400;
+}
+header .container .content__header .menu__header nav .nav__link li a:hover{
+    text-decoration: underline;
+}
+header .container .content__header .card__head{
+    flex-basis: 10%;
+}
+.slide__body .container .container_slide{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.slide__body .container .container_slide .slides{
+    width: 100%;
+    display: flex;
+}
+.slide__body .container .container_slide .slides .item{
+    min-width: 100%;
+}
+.slide__body .container .container_slide .slides .item img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: none;
+}
+.slide__body .container .container_slide .next,.prev{
+    position: absolute;
+    top: 50%;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slide__body .container .container_slide .next:hover,.prev:hover{
+    background: saddlebrown;
+}
+.slide__body .container .container_slide .next{
+    right: 0;
+}
+
+
